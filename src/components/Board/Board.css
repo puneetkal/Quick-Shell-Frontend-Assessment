@@ -1,0 +1,109 @@
+.board {
+    padding: 20px;
+    overflow-x: auto;
+    background-color: #F4F6FA;
+    scrollbar-width: none;
+}
+
+.board-columns {
+    display: flex;
+    gap: 20px;
+    min-height: calc(100vh - 150px);
+}
+
+.board-column {
+    flex: 0 0 350px;
+    background: #f4f5f8;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.column-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    color: #373737;
+}
+
+.column-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.status-icon,
+.priority-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-avatar-header {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.user-avatar-header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-avatar-header .status-dot {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.ticket-count {
+    background: #e4e4e4;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #666;
+}
+
+.column-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.add-button,
+.more-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 16px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.add-button:hover,
+.more-button:hover {
+    background: #e4e4e4;
+}
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 100px;
+} 
